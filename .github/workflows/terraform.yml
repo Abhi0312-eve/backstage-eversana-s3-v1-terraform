@@ -43,6 +43,11 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
+      - name: Terraform Debug
+        run: |
+         terraform version
+         terraform providers
+
       - name: Terraform Validate
         run: terraform validate
 
